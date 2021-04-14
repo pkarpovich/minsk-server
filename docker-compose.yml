@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+#  mongodb:
+#    container_name: actions-db
+#    image: mongo:4.4-bionic
+#    ports:
+#      - "27017:27017"
+#    volumes:
+#      - mongodbdata:/data/db
+#    command: [--auth]
+
+  server:
+    build: .
+    environment:
+      - DATABASE_CONNECTION_STRING=<STRING>
+    ports:
+      - "3000:3000"
+
+
+volumes:
+  mongodbdata:
+
+networks:
+  default:
+    external:
+      name: mongo-network
