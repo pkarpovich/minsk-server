@@ -1,1 +1,5 @@
-export class CreateGalleryDto {}
+export class CreateGalleryDto {
+  title: string;
+
+  text: string;
+}
