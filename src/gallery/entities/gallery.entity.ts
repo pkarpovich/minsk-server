@@ -1,6 +1,8 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
+import { Content } from './content.entity';
+
 export type GalleryDocument = Gallery & Document;
 
 @Schema()
@@ -9,7 +11,10 @@ export class Gallery {
   title: string;
 
   @Prop()
-  text: string;
+  type: string;
+
+  @Prop()
+  content: Content[];
 }
 
 export const GallerySchema = SchemaFactory.createForClass(Gallery);
