@@ -14,6 +14,9 @@ export class Gallery {
   type: string;
 
   @Prop()
+  link: string;
+
+  @Prop()
   content: Content[];
 }
 

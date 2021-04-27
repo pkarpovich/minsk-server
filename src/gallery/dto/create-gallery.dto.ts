@@ -5,5 +5,7 @@ export class CreateGalleryDto {
 
   type: string;
 
+  link: string;
+
   content: ContentDto[];
 }

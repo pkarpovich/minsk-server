@@ -1,3 +1,4 @@
+import { ContentDto } from './content.dto';
 import { Content } from '../entities/content.entity';
 
 export class GalleryDto {
@@ -6,6 +7,8 @@ export class GalleryDto {
   title: string;
 
   type: string;
+
+  link: string;
 
   preview: string;
 

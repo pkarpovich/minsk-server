@@ -37,9 +37,10 @@ export class GalleryController {
       galleryDto.title = g.title;
       const firstImage = g.content.find((c) => c.type === 'IMAGE');
 
-      galleryDto.preview = firstImage?.value ?? '';
-      galleryDto.content = g.content;
+      galleryDto.preview = firstImage?.value[0].value ?? '';
       galleryDto.type = g.type;
+      galleryDto.link = g.link;
+      galleryDto.content = g.content;
 
       return galleryDto;
     });
