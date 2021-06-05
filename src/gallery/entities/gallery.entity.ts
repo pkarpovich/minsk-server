@@ -11,6 +11,18 @@ export class Gallery {
   title: string;
 
   @Prop()
+  top: string;
+
+  @Prop()
+  left: string;
+
+  @Prop()
+  longitude: string;
+
+  @Prop()
+  latitude: string;
+
+  @Prop()
   type: string;
 
   @Prop()

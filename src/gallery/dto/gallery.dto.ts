@@ -6,6 +6,14 @@ export class GalleryDto {
 
   title: string;
 
+  top: string;
+
+  left: string;
+
+  longitude: string;
+
+  latitude: string;
+
   type: string;
 
   link: string;

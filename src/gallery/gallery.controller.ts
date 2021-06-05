@@ -35,6 +35,10 @@ export class GalleryController {
 
       galleryDto.id = g._id;
       galleryDto.title = g.title;
+      galleryDto.left = g.left;
+      galleryDto.top = g.top;
+      galleryDto.latitude = g.latitude;
+      galleryDto.longitude = g.longitude;
       const firstImage = g.content.find((c) => c.type === 'IMAGE');
 
       galleryDto.preview = firstImage?.value[0].value ?? '';
